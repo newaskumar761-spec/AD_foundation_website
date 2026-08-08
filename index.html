@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AD Foundation | Free Education for Every Child</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f9ff;
+    color:#172554;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#0b2a66;
+    color:white;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#8fd3ff;
+}
+
+/* Hero */
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0b2a66,#1769aa);
+    color:white;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#8fd3ff;
+}
+
+.hero p{
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:white;
+    color:#0b2a66;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#dff3ff;
+}
+
+/* Sections */
+section{
+    padding:60px 6%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:35px;
+    color:#0b2a66;
+}
+
+/* About */
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:17px;
+}
+
+/* Classes */
+.classes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card .icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#0b2a66;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* Activities */
+.activities{
+    background:#eaf4ff;
+}
+
+.activity-list{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.activity{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.contact-box p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#0b2a66;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+footer p{
+    margin:5px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+    }
+
+    nav a{
+        margin:0 5px;
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:75vh;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .classes{
+        grid-template-columns:1fr;
+    }
+
+    .activity-list{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+    <div class="logo">AD Foundation</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- Home -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>AD <span>Foundation</span></h1>
+
+        <p>
+            Free Education for Every Child
+        </p>
+
+        <p>
+            We help children learn, explore and grow through
+            computer education, AI, graphics, mathematics,
+            science and grammar.
+        </p>
+
+        <a href="#classes" class="btn">
+            Explore Our Classes
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- About -->
+<section id="about">
+
+    <h2 class="section-title">About AD Foundation</h2>
+
+    <div class="about">
+
+        <p>
+            AD Foundation is an educational initiative dedicated
+            to providing free learning opportunities for children.
+            Our goal is to make education accessible, practical
+            and enjoyable for every child.
+        </p>
+
+        <br>
+
+        <p>
+            Along with regular subjects, children can learn
+            computer skills, artificial intelligence, graphic
+            design and participate in creative educational
+            activities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Classes -->
+<section id="classes">
+
+    <h2 class="section-title">Our Classes</h2>
+
+    <div class="classes">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Computer Class</h3>
+            <p>
+                Learn Basic and Advanced Computer Skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤖</div>
+            <h3>AI Class</h3>
+            <p>
+                Learn about Artificial Intelligence and
+                modern technology.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>
+                Explore creativity, design and digital graphics.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔢</div>
+            <h3>Math Class</h3>
+            <p>
+                Learn mathematics with simple concepts
+                and practical examples.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h3>Science Class</h3>
+            <p>
+                Discover science through learning and
+                interesting activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>Grammar Class</h3>
+            <p>
+                Improve English grammar, vocabulary
+                and communication skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Activities -->
+<section class="activities" id="activities">
+
+    <h2 class="section-title">Learning Activities</h2>
+
+    <div class="activity-list">
+
+        <div class="activity">
+            🎨 <strong>Art & Drawing</strong><br>
+            Creative drawing and painting activities.
+        </div>
+
+        <div class="activity">
+            🧪 <strong>Science Activities</strong><br>
+            Simple educational experiments and projects.
+        </div>
+
+        <div class="activity">
+            💻 <strong>Computer Activities</strong><br>
+            Practical computer learning activities.
+        </div>
+
+        <div class="activity">
+            🧠 <strong>Quiz & Brain Games</strong><br>
+            Fun activities to improve knowledge and thinking.
+        </div>
+
+        <div class="activity">
+            🎉 <strong>Festival Celebrations</strong><br>
+            Celebrate Diwali, New Year and other festivals.
+        </div>
+
+        <div class="activity">
+            🏆 <strong>Educational Competitions</strong><br>
+            Fun competitions that encourage learning.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p>📚 Want to learn with AD Foundation?</p>
+
+        <p>We welcome children who want to learn,
+        explore and grow.</p>
+
+        <p>📧 Email: adfoundation@example.com</p>
+
+        <p>📞 Phone: +91 XXXXX XXXXX</p>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p><strong>AD Foundation</strong></p>
+
+    <p>Free Education for Every Child 🌱</p>
+
+    <p>© 2026 AD Foundation. All Rights Reserved.</p>
+
+</footer>
+
+
+<script>
+
+const links = document.querySelectorAll("nav a");
+
+links.forEach(link => {
+
+    link.addEventListener("click", function(){
+
+        links.forEach(item => item.style.opacity = "1");
+
+        this.style.opacity = "0.7";
+
+    });
+
+});
+
+</script>
+
+</body>
+  </html>
